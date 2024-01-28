@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0 60px 0 60px;
+}
+
+
+:root{
+    --white-color:white;
+    --black-color:black;
+    --background-btn: #FF7757;
+    --text-color: #221F20;
+    --text-hover:#dc3545;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+}
+
+@keyframes growUp {
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}

@@ -1,0 +1,145 @@
+.category{
+    margin-top: 100px;
+}
+.navigation__container{
+    border-bottom: 1px solid #dedede;
+}
+
+.navigation{
+    margin-bottom:24px;
+}
+
+.navigation a{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 100;
+}
+
+.sorting{
+    border-right: 2px solid #7e7878;
+    padding-right: 64px;
+}
+.sort__size{
+    margin-bottom: 12px;
+}
+.sort__size-header,
+.sort__color-header,
+.sort__price-header,
+.sort__discount-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    margin: 12px auto;
+}
+
+.sort__color-header,
+.sort__price-header,
+.sort__discount-header{
+    border-top: 1px solid #c8c4c4;
+    padding-top: 18px;
+}
+
+.sort__size-header i:hover{
+    cursor: pointer;
+}
+.sort__size-content{
+
+}
+
+.sort__size-attribute-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sort__size-attribute-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 6px 4px;
+    margin: 6px 8px 6px 0;
+    border-radius: 12px 0 12px 0;
+    border: 1px solid #858181;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort__size-attribute-item:hover{
+    cursor: pointer;
+    background: #ccc;
+}
+
+.sort__color-attribute-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sort__color-attribute-item{
+    flex:0 0 20%;
+    max-width: 20%;
+}
+.color_circle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50% 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 6px 4px 0;
+}
+.color_circle i{
+    display: none;
+}
+
+.sort__price-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sort__price-content input{
+    max-width: 40%;
+    line-height: 2.4rem;
+    border:1px solid #d8d4d4;
+    border-radius: 4px;
+}
+.sort__discount-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.discount__item{
+    font-size: 1.6rem;
+    margin: 6px 0;
+}
+
+.sort__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+.sort__container div {
+    border: 1px solid #ccc;
+    border-radius: 8px 0 8px 0;
+    padding: 8px 10px;
+    min-width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sort__container div:hover{
+    cursor: pointer;
+    background: #0c0c0c;
+    color: aliceblue;
+}
+
+.sort__container div p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
