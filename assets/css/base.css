@@ -52,3 +52,15 @@ body{
         scale: 1;
     }
 }
+
+/* ============== */
+.red{
+    background:red;
+}
+
+.orange{
+    background: #FF7757;
+}
+.blue{
+    background: #3bcbff;
+}

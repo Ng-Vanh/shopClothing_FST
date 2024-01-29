@@ -52,3 +52,35 @@ colorCircles.forEach(function(container) {
     });
 });
 
+
+const sortSizeToggleBtn = document.getElementById('sortSizeToggleBtn');
+const sizeContent = document.getElementById('sizeContent');
+
+sortSizeToggleBtn.addEventListener('click', function () {
+        sizeContent.classList.toggle('show');
+        sortSizeToggleBtn.classList.toggle('fa-plus');
+        sortSizeToggleBtn.classList.toggle('fa-minus');
+    });
+
+const sortColorBtn = document.querySelector('.sort__color-header>i');
+const colorContent = document.querySelector('.sort__color-content')
+sortColorBtn.addEventListener('click', function () {
+    colorContent.classList.toggle('show');
+    sortColorBtn.classList.toggle('fa-plus');
+    sortColorBtn.classList.toggle('fa-minus');
+});
+const sortPriceBtn = document.querySelector('.sort__price-header>i');
+const priceContent = document.querySelector('.sort__price-content');
+sortPriceBtn.addEventListener('click', function () {
+    priceContent.classList.toggle('showFlexCenter');
+    sortPriceBtn.classList.toggle('fa-plus');
+    sortPriceBtn.classList.toggle('fa-minus');
+});
+
+const sortDiscountBtn = document.querySelector('.sort__discount-header>i');
+const discountContent = document.querySelector('.sort__discount-content');
+sortDiscountBtn.addEventListener('click', function () {
+    discountContent.classList.toggle('showFlexStart');
+    sortDiscountBtn.classList.toggle('fa-plus');
+    sortDiscountBtn.classList.toggle('fa-minus');
+});

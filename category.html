@@ -251,7 +251,7 @@
             <div class="row navigation__container">
                 <div class="col xl-12">
                     <div class="navigation">
-                        <a href="#">Trang Chủ</a>
+                        <a href="index.html">Trang Chủ</a>
                         <span style="font-size: 14px;"> &#8722; </span>
                         <a href="">Áo</a>
                         <span style="font-size: 14px;"> &#8722; </span>
@@ -265,10 +265,9 @@
                         <div class="sort__size">
                             <div class="sort__size-header">
                                 <p>Size</p>
-                                <i class="fa-solid fa-plus" ></i>
-                                <i class="fa-solid fa-minus"></i>
+                                <i class="fa-solid fa-plus" id="sortSizeToggleBtn"></i>
                             </div>
-                            <div class="sort__size-content">
+                            <div class="sort__size-content" id="sizeContent">
                                 <ul class="sort__size-attribute-list">
                                     <li class="sort__size-attribute-item">S</li>
                                     <li class="sort__size-attribute-item">M</li>
@@ -282,7 +281,6 @@
                             <div class="sort__color-header">
                                 <p>Màu sắc</p>
                                 <i class="fa-solid fa-plus"></i>
-                                <i class="fa-solid fa-minus"></i>
                             </div>  
                             <div class="sort__color-content">
                                 <ul class="sort__color-attribute-list">
@@ -314,19 +312,17 @@
                             <div class="sort__price-header">
                                 <p>Mức giá</p>
                                 <i class="fa-solid fa-plus"></i>
-                                <i class="fa-solid fa-minus"></i>
                             </div>
                             <div class="sort__price-content">
                                 <input type="text" name="minPrice" id="" class="price_value">
                                 <input type="text" name="maxPrice" id="" class="price_value">
-                                
+                        
                             </div>
                         </div>
                         <div class="sort__discount">
                             <div class="sort__discount-header">
                                 <p>Mức chiết khấu</p>
                                 <i class="fa-solid fa-plus"></i>
-                                <i class="fa-solid fa-minus"></i>
                             </div>
                             <div class="sort__discount-content">
                                 <label class="discount__item">
@@ -357,7 +353,436 @@
                         <div class="sorted"><p>Lọc</p></div>
                     </div>
                 </div>
-                <div class="col xl-9"></div>
+                <div class="col xl-9">
+                    <div class="detail">
+                        <div class="detail__heading">
+                            <div class="detail__heading-title"><p>Áo sơ mi</p> </div>
+                            <div class="detail__heading-sort">
+                                <select name="" id="">
+                                    <option value="">Sắp xếp theo</option>
+                                    <option value="">Mặc định</option>
+                                    <option value="">Mới nhất</option>
+                                    <option value="">Được mua nhiều nhất</option>
+                                    <option value="">Được yêu thích nhất</option>
+                                    <option value="">Giá: cao đến thấp</option>
+                                    <option value="">Giá: thấp đến cao</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="detail__container">
+                            <div class="grid">
+                                <div class="row ">
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col xl-3 product__container">
+                                        <div class="product__item">
+                                            <div class="product__item-img">
+                                                <img src="assets/image/product1.jpg" alt="">
+                                                <div class="product__item-img-sale"><p>50%</p></div>
+                                            </div>
+                                            <div class="product__item-properties">
+                                                <ul class="product__item-color-list">
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color red"></div>
+                                                    </li>
+                                                    <li class="product__item-color-item">
+                                                        <div class="product__item-color orange"></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="product__item-favorite">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-name"><a href="#">Áo Sơ Mi Tay Hến Xoắn Eo</a></div>
+                                            <div class="product__item-price-container">
+                                                <div class="price">
+                                                    <p>545.000đ</p>
+                                                    <span>1.090.000đ</span>
+                                                </div>
+                                                <div class="buy__container">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__number-container">
+                        <ul class="page__number-list">
+                            <li class="page__number-item">
+                                <p>Trang đầu</p>
+                            </li>
+                            <li class="page__number-item">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </li>
+                            <li class="page__number-item"><span>1</span></li>
+                            <li class="page__number-item"><span>2</span></li>
+                            <li class="page__number-item"><span>3</span></li>
+                            <li class="page__number-item"><span>4</span></li>
+                            <li class="page__number-item"><span>5</span></li>
+
+                            <li class="page__number-item">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </li>
+                            <li class="page__number-item">
+                                <p>Trang cuối</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
