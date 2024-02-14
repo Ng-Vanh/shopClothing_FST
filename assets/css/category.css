@@ -1,5 +1,3 @@
-/* DUng chung */
-
 
 .category{
     margin-top: 100px;
@@ -36,6 +34,13 @@
     font-size: 1.6rem;
     margin: 12px auto;
 }
+.sort__size-header>p,
+.sort__color-header>p,
+.sort__price-header>p,
+.sort__discount-header>p{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
 
 .sort__color-header,
 .sort__price-header,
@@ -44,9 +49,7 @@
     padding-top: 18px;
 }
 
-.sort__size-header i:hover{
-    cursor: pointer;
-}
+
 .sort__size-content{
     animation: fadeIn ease-in .3s;
     display: none;
@@ -98,9 +101,7 @@
     justify-content: center;
     margin: 8px 6px 4px 0;
 }
-.color_circle i{
-    display: none;
-}
+
 
 .sort__price-content{
     display: none;
@@ -207,9 +208,7 @@
 .product__container{
     margin-top: 32px;
 }
-.product__item{
 
-}
 .product__item-img{
     position: relative;
 }
@@ -351,4 +350,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+}
+.hidden{
+    display: none;
 }

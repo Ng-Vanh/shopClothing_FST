@@ -1,0 +1,231 @@
+.product{
+    margin-top: 100px;
+}
+.main__product{
+    margin-top: 24px;
+}
+.product__image-container{
+    display: flex;
+}
+.main__image{
+    position: relative;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.main__image>img{
+    width: 100%;
+    max-height: 800px;
+    max-width: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main__image>i{
+    position: absolute;
+    top: 45%;
+    font-size: 3.2rem;
+    z-index: 2;
+}
+.main__image>i:nth-child(1){
+    left: 5%;
+}
+.main__image>i:nth-child(2){
+    right: 10%;
+}
+.support__image{
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    max-height: 50%;
+    position: relative;
+}
+.support__image>i{
+    opacity: 0.7;
+    position: absolute;
+    left: 35%;
+    font-size: 2.6rem;
+}
+.support__image>i:first-child{
+    top: 20px;
+}
+.support__image>i:last-child{
+    top: 680px;
+}
+.support__image-list{
+    display: flex;
+    flex-wrap:nowrap; ;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    max-height: 600px;
+    overflow: hidden;
+}
+.support__image-list::-webkit-scrollbar{
+    display: block;
+}
+
+.support__image-item{
+    margin-bottom: 12px;
+}
+.support__image-item>img{
+    width: 80%;
+}
+.product__detail-container{
+    margin-top: 24px;
+}
+.product__name{
+    font-size: 3.4rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    max-height: 5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.product__sub-info{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.product__sub-info>p{
+    font-size: 1.6rem;
+    margin-right: 24px;
+}
+.product__sub-info-rating{
+    margin: 4px 12px 8px 12px;
+    opacity: .6;
+    font-size: 1.6rem;
+}
+.product__price{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 16px auto;
+}
+.product__price>h2{
+    font-size: 2.4rem;
+    margin-right: 6px;
+}
+.product__price>p{
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    opacity: .6;
+    margin: auto 18px auto 4px;
+}
+
+.discount{
+    width: 64px;
+    background: #DC633A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px auto;
+    
+}
+.discount>p{
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+.product__color>h2{
+    margin-bottom: 48px;
+    font-size: 1.8rem;
+}
+
+.product__size{
+
+}
+.product__size-list{
+    display: flex;
+    align-items: center;
+}
+.product__size-item{
+    margin: 8px 12px 18px 0;
+    font-size: 1.8rem;
+    padding: 8px 18px;
+    border: 1px solid #d8d7d7;
+    cursor: pointer;
+    border-radius: 4px;
+    
+}
+
+
+.product__quantity{
+    display: flex;
+    font-size: 1.8rem;
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+.product__quantity>p{
+    margin: 0 16px 18px 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.product__quantity-counting{
+
+}
+.product__quantity-counting>input{
+    height: 3rem;
+    width: 48px;
+}
+.product__buy{
+    display: flex;
+    align-items: center;
+}
+.addToCart,
+.buy,
+.favorite{
+    border: 1px solid #706c6c;
+    border-radius: 18px 0 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+.addToCart:hover,
+.buy:hover,
+.favorite:hover{
+    cursor: pointer;
+    background: #0f0f0f;
+    color: #fffcfc;
+}
+
+.addToCart{
+    width: 180px;
+    height: 48px;
+    
+    
+}
+.addToCart>p,
+.buy>p{
+    font-size: 2rem;
+    line-height: 2.4rem;
+    padding: 4px 12px;
+    font-weight: 600;
+}
+.buy{
+    width: 140px;
+    height: 48px;
+    
+
+}
+.favorite{
+    font-size: 2.4rem;
+    width: 50px;
+    height: 48px;
+    
+}
+.related__product-title{
+    font-size: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 112px;
+    margin-bottom: 36px;
+}
+.related__products{
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
