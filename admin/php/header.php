@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../view/css/base.css">
     <link rel="stylesheet" href="../view/css/grid.css">
     <link rel="stylesheet" href="../view/css/category.css">
+    <link rel="stylesheet" href="../view/css/categoryList.css">
+
     <title>Category</title>
 </head>
 <body>

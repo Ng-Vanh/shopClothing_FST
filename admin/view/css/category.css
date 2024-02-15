@@ -41,6 +41,7 @@ header>h1{
 }
 .admin__content-right input{
     height: 30px;
+    width: 200px;
     padding: 2px 2px 2px 8px;
     margin-left: 12px;
 }
@@ -53,3 +54,5 @@ header>h1{
     cursor: pointer;
     background: #ec7c7c;
 }
+/* ========= */
+

@@ -2,22 +2,22 @@
         <div class="row admin__content">
             <div class="col xl-3 admin__content-left">
                 <ul>
-                    <li><a href="#">Danh muc</a>
+                    <li><a href="categoryAD.php">Danh mục</a>
                         <ul>
-                            <li><a href="#">Them danh muc</a></li>
-                            <li><a href="#">Danh sach danh muc</a></li>
+                            <li><a href="categoryAD.php">Thêm danh mục</a></li>
+                            <li><a href="categoryListAD.php">Danh sách danh mục</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Loai san pham</a>
+                    <li><a href="categoryTypeProduct.php">Loại sản phẩm</a>
                         <ul>
-                            <li><a href="#">Them loai san pham</a></li>
-                            <li><a href="#">Danh sach loai san pham</a></li>
+                            <li><a href="categoryTypeProduct.php">Thêm loại sản phẩm</a></li>
+                            <li><a href="categoryTypeProductList.php">Danh sách loại sản phẩm</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">San pham</a>
+                    <li><a href="#">Sản phẩm</a>
                         <ul>
-                            <li><a href="#">Them san pham</a></li>
-                            <li><a href="#">Danh sach san pham</a></li>
+                            <li><a href="#">Thêm sản phẩm</a></li>
+                            <li><a href="#">Danh sách sản phẩm</a></li>
                         </ul>
                     </li>
 
