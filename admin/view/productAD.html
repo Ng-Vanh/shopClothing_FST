@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/product.css">
+    <title>Category</title>
+</head>
+<body>
+    <header><h1>TOP</h1></header>
+    <div class="grid">
+        <div class="row admin__content">
+            <div class="col xl-3 admin__content-left">
+                <ul>
+                    <li><a href="#">Danh muc</a>
+                        <ul>
+                            <li><a href="#">Them danh muc</a></li>
+                            <li><a href="#">Danh sach danh muc</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Loai san pham</a>
+                        <ul>
+                            <li><a href="#">Them loai san pham</a></li>
+                            <li><a href="#">Danh sach loai san pham</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">San pham</a>
+                        <ul>
+                            <li><a href="#">Them san pham</a></li>
+                            <li><a href="#">Danh sach san pham</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col xl-9 admin__content-right product__info">
+                <h1>Thêm sản phẩm</h1>
+                <form action="" method="POST">
+                    <label for="">Nhập tên sản phẩm <span style="color:red;">*</span></label>
+                    <input name="category_name" type="text" placeholder="Nhập tên sản phẩm">
+                    <label for="">Nhập tên danh mục<span style="color: red;">*</span></label>
+                    <select name="category_id" id="">
+                        <option value="">---Chọn danh mục</option>
+                        <option value="">Nam</option>
+                    </select>
+                    <label for="">Nhập tên loại sản phẩm<span style="color: red;">*</span></label>
+                    <select name="typeproduct_id" id="">
+                        <option value="">---Chọn loại sản phẩm</option>
+                        <option value="">Quần âu</option>
+                    </select>
+                    <label for="">Giá sản phẩm<span style="color: red;">*</span></label>
+                    <input type="text" placeholder="Nhập giá sản phẩm">
+                    <label for="">Giá khuyễn mãi<span style="color: red;">*</span></label>
+                    <input type="text" placeholder="Nhập giá khuyễn mãi">
+                    <label for="">Mô tả sản phẩm<span style="color: red;">*</span></label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="">Ảnh sản phẩm<span style="color: red;">*</span></label>
+                    <input type="file">
+                    <label for="">Ảnh mô tả<span style="color: red;">*</span></label>
+                    <input multiple type="file" name="" id="">
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

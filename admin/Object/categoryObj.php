@@ -56,11 +56,17 @@ class Category{
         }
     }
     public function removeCategory($cateId){
+        $queryRemoveTP = "DELETE FROM tbl_typeproduct WHERE category_id = ?";
+        $state1 = $this->db->link->prepare($queryRemoveTP);
+        $state1->bind_param("i",$cateId);
+        $state1 ->execute();
+
+
         $query = "DELETE FROM tbl_category WHERE category_id = ?";
         $stmt = $this->db->link->prepare($query);
         $stmt->bind_param("i", $cateId);
         $stmt->execute();
-        header('Location:categoryListAD.php');
+        header('Location:categoryTypeProductList.php');
         if ($stmt->affected_rows > 0) {
             return true; 
         } else {

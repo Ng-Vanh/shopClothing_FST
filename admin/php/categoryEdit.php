@@ -20,7 +20,7 @@ if($getCategory){
 
 
 <?php
-$category = new Category();
+
 
 // if($_SERVER['REQUEST_METHOD'] === 'POST'){
 //     $categoryName = $_POST['category_name'];
@@ -30,9 +30,9 @@ $category = new Category();
 // }
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $categoryName = $_POST['category_name'];
-    if($categoryName!==""){
-        $updateCategory = $category->updateCategory($categoryName,$category_id);
+    $newCategoryName = $_POST['category_name'];
+    if($newCategoryName!==""){
+        $updateCategory = $category->updateCategory($newCategoryName,$category_id);
     }
 }
 ?>
@@ -41,7 +41,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 <h1>Update danh mục</h1>
                 <form action="" method="POST">
                     <input required name="category_name" type="text" 
-                        placeholder="Nhap ten danh muc" value="<?php echo $res['category_name'] ?>">
+                        placeholder="Nhập tên danh mục" value="<?php echo $res['category_name'] ?>">
                     <button>Update</button>
                 </form>
             </div>

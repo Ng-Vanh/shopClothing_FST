@@ -10,7 +10,7 @@ $listTypeProd = $categoryTypeProductObj->showTypeProduct();
 ?>
 
 <div class="col xl-9 admin__content-right-list">
-                <h1>Danh sách danh mục</h1>
+                <h1>Danh sách loại sản phẩm</h1>
                 <table>
                     <tr>
                         <th>STT</th>

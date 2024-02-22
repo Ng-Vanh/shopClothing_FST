@@ -14,10 +14,10 @@
                             <li><a href="categoryTypeProductList.php">Danh sách loại sản phẩm</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Sản phẩm</a>
+                    <li><a href="product.php">Sản phẩm</a>
                         <ul>
-                            <li><a href="#">Thêm sản phẩm</a></li>
-                            <li><a href="#">Danh sách sản phẩm</a></li>
+                            <li><a href="product.php">Thêm sản phẩm</a></li>
+                            <li><a href="productList.php">Danh sách sản phẩm</a></li>
                         </ul>
                     </li>
 
