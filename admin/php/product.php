@@ -99,7 +99,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                     <label for="">Ảnh sản phẩm<span style="color: red;">*</span></label>
                     <input name='mainImgProduct' required type="file">
                     <label for="">Ảnh mô tả<span style="color: red;">*</span></label>
-                    <input name="detailImgProduct" required multiple type="file" id="">
+                    <input multiple name="detailImgProduct[]" required  type="file" id="">
                     <button>Submit</button>
                 </form>
             </div>

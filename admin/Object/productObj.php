@@ -45,6 +45,24 @@ class Product{
         $stmt = $this->db->link->prepare($query);
         $stmt->bind_param("siidiss", $productName, $category_id, $typeproduct_id, $price, $priceDiscount, $productInfo, $mainImgProduct);
         $res = $stmt->execute();
+
+        $queryGetId = "SELECT * FROM tbl_product ORDER BY product_id DESC LIMIT 1";
+        $resTmp = $this->db->select($queryGetId)->fetch_assoc();
+        $curProdId = $resTmp['product_id'];
+        $listImgName = $fileData['detailImgProduct']['name'];
+        $tmpList = $fileData['detailImgProduct']['tmp_name'];
+
+
+        foreach($listImgName as $imgName => $value) {
+            move_uploaded_file($listImgName[$imgName], 'uploads/'.$value);
+            $queryIs = "INSERT INTO tbl_img_product_related (product_id, product_img_name) VALUES (?,?)";
+            $statements = $this->db->link->prepare($queryIs);
+            $statements->bind_param("is", $curProdId, $value); 
+            $r = $statements->execute();
+            $statements->close();
+        }
+
+
         $stmt->close();
         return $res;
     }
@@ -56,6 +74,11 @@ class Product{
     public function removeProduct($proID){
         $query = "DELETE FROM tbl_product WHERE product_id = $proID";
         $res = $this->db->delete($query);
+        if($res){
+            $removeImg = "DELETE FROM tbl_img_product_related WHERE product_id = $proID";
+            $r = $this->db->delete($removeImg);
+        }
+
         return $res;
     }
     public function getProduct($oldID){
